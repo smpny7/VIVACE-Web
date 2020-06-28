@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://smpny7.github.io/VIVACE-Web/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+    <link href="https://smpny7.github.io/VIVACE-Web/css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://smpny7.github.io/VIVACE-Web/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://smpny7.github.io/VIVACE-Web/js/scroll.js"></script>
+    <title>VIVACE</title>
+</head>
+
+<body>
+    <!-- ---- Background ---------------------------------------------------------------- -->
+    <img src="img/background.jpg" class="background fixed-top overflow-hidden" alt="Background">
+
+
+    <!-- ---- Title --------------------------------------------------------------------- -->
+    <h1 id="scroll-1" class="position-absolute text-center">VIVACE</h1>
+    <p id="scroll-2" class="subTitle position-absolute text-center"><span>Complete by</span> <span>Autumn 2020.</span></p>
+
+
+    <!-- ---- Bottom Image -------------------------------------------------------------- -->
+    <img src="img/bottom1.png" class="bottom position-absolute m-0 p-0" alt="BottomImage">
+
+
+    <!-- ---- Body ---------------------------------------------------------------------- -->
+    <div class="whtBg position-absolute m-0 p-0">
+        <div class="container">
+
+
+            <!-- ---- YouTube ----------------------------------------------------------- -->
+            <h2>Official YouTube</h2>
+
+            <div class="row justify-content-center mt-4">
+                <div class="col-11 text-center youtube">
+                    Now Preparing...
+                    <iframe class="mt-3" width="1920" height="1080" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="background-color: #f0ffffbb;"></iframe>
+                    <!-- <iframe class="mt-3" width="1920" height="1080" src="https://www.youtube-nocookie.com/embed/-NHhXsPCGd4?autoplay=1&controls=0&modestbranding=1&rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                </div>
+            </div>
+
+
+            <!-- ---- Release History from API ------------------------------------------ -->
+            <h2>Release History</h2>
+
+            <ul id="jsonList" class="list-group mt-5 offset-md-0"></ul>
+            <a href="#" class="btn btn-primary col-10 col-md-2 mb-5 mb-md-0 mt-4 offset-1 offset-md-0 float-md-right" target="_blank">View All</a>
+
+
+            <!-- ---- Developer Introduction -------------------------------------------- -->
+            <h2>Project Developer</h2>
+
+            <div class="card-group justify-content-center mt-3">
+                <div class="card col-10 col-md-4 mt-4 offset-1 offset-md-0">
+                    <img class="card-img-top mt-5 mb-4" src="img/icon_smpny7.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title">SMPNY7</h3>
+                        <p class="card-text">In charge of <a href="#" target="_blank">VIVACE</a> coding and design. Usually working part-time as an engineer. My territory is web front and back-end, designing UI & UX, make Android apps with Kotlin.</p>
+                    </div>
+                </div>
+                <div class="card col-10 col-md-4 mt-4 offset-1 offset-md-0">
+                    <img class="card-img-top mt-5 mb-4" src="img/icon_chishige1217200.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title">CHISHIGE 1217200</h3>
+                        <p class="card-text">Thanks for your visiting. Because of some kind of connection, I am a member of this project. I am not good at coding, but I want to do my best. I am making some musics.</p>
+                    </div>
+                </div>
+                <div class="card col-10 col-md-4 mt-4 offset-1 offset-md-0">
+                    <img class="card-img-top mt-5 mb-4" src="img/icon_natsu-dev.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h3 class="card-title">NATSU-DEV</h3>
+                        <p class="card-text">Now Preparing...</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ---- Licence used for VIVACE ------------------------------------------- -->
+            <h2>Licence</h2>
+
+            <div id="collapse-accordion">
+                <div class="accordion mt-4">
+                    <div class="card col-10 col-md-12 offset-1 offset-md-0 mb-2">
+                        <div class="card-header">
+                            <div class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-accordion-1">
+                                    Fonts
+                                    <svg class="bi bi-type ml-3" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.244 13.081l.943-2.803H6.66l.944 2.803H8.86L5.54 3.75H4.322L1 13.081h1.244zm2.7-7.923L6.34 9.314H3.51l1.4-4.156h.034zm9.146 7.027h.035v.896h1.128V8.125c0-1.51-1.114-2.345-2.646-2.345-1.736 0-2.59.916-2.666 2.174h1.108c.068-.718.595-1.19 1.517-1.19.971 0 1.518.52 1.518 1.464v.731H12.19c-1.647.007-2.522.8-2.522 2.058 0 1.319.957 2.18 2.345 2.18 1.06 0 1.716-.43 2.078-1.011zm-1.763.035c-.752 0-1.456-.397-1.456-1.244 0-.65.424-1.115 1.408-1.115h1.805v.834c0 .896-.752 1.525-1.757 1.525z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="collapse-accordion-1" class="collapse show" data-parent="#collapse-accordion">
+                            <div class="card-body">
+                                <p class="japaneseFont float-left m-0 ml-md-2">Keania One / Julia Petretta</p><a href="https://fonts.google.com/specimen/Keania+One" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                                <p class="japaneseFont float-left m-0 ml-md-2">M PLUS Rounded 1c / M+ Fonts Project</p><a href="https://fonts.google.com/specimen/M+PLUS+Rounded+1c" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion mt-2">
+                    <div class="card col-10 col-md-12 offset-1 offset-md-0 mb-2">
+                        <div class="card-header">
+                            <div class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-accordion-2">
+                                    Images
+                                    <svg class="bi bi-image ml-3" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M14.002 2h-12a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zm-12-1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12z"/>
+                                        <path d="M10.648 7.646a.5.5 0 0 1 .577-.093L15.002 9.5V14h-14v-2l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71z"/>
+                                        <path fill-rule="evenodd" d="M4.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="collapse-accordion-2" class="collapse" data-parent="#collapse-accordion">
+                            <div class="card-body">
+                                <p class="japaneseFont float-left m-0 ml-md-2">フリー素材 アニメ風 / てんぱる</p><a href="https://www.pixiv.net/artworks/77327114" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                                <p class="japaneseFont float-left m-0 ml-md-2">音楽の無料 イラスト素材 / Color-full Days</p><a href="https://season-freeillust.com/music-illust.html" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion mt-2">
+                    <div class="card col-10 col-md-12 offset-1 offset-md-0 mb-2">
+                        <div class="card-header">
+                            <div class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-accordion-3">
+                                    Music
+                                    <svg class="bi bi-headphones ml-3" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M8 3a5 5 0 0 0-5 5v4.5H2V8a6 6 0 1 1 12 0v4.5h-1V8a5 5 0 0 0-5-5z"/>
+                                        <path d="M11 10a1 1 0 0 1 1-1h2v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3zm-6 0a1 1 0 0 0-1-1H2v4a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="collapse-accordion-3" class="collapse" data-parent="#collapse-accordion">
+                            <div class="card-body">
+                                <p class="japaneseFont float-left m-0 ml-md-2">シャイニングスター / 魔王魂</p><a href="https://maoudamashii.jokersounds.com/archives/song_shiho_shining_star.html" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                                <p class="japaneseFont float-left m-0 ml-md-2">Burning Heart / 魔王魂</p><a href="https://maoudamashii.jokersounds.com/archives/song_kei_burning_heart.html" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                                <p class="japaneseFont float-left m-0 ml-md-2">春の訪れ / 智重</p><a href="https://www.youtube.com/watch?v=svGN62VnpJM" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                                <p class="japaneseFont float-left m-0 ml-md-2">HardStyle / pho</p><a href="#" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion mt-2">
+                    <div class="card col-10 col-md-12 offset-1 offset-md-0 mb-2">
+                        <div class="card-header">
+                            <div class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse-accordion-4">
+                                    Sounds
+                                    <svg class="bi bi-music-note-beamed ml-3" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="collapse-accordion-4" class="collapse" data-parent="#collapse-accordion">
+                            <div class="card-body">
+                                <p class="japaneseFont float-left m-0 ml-md-2">フリー効果音素材「ワンポイント16」 / 魔王魂</p><a href="https://maoudamashii.jokersounds.com/list/se2.html" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                                <p class="japaneseFont float-left m-0 ml-md-2">パパッ / 効果音ラボ</p><a href="https://soundeffect-lab.info/sound/search.php?date=2020-04-12" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                                <p class="japaneseFont float-left m-0 ml-md-2">BGM リザルト画面 / 効果音素材: PocketSound</p><a href="https://pocket-se.info/archives/1116" class="float-right m-0 mb-4" target="_blank">LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- ---- Bottom Spacing ---------------------------------------------------- -->
+            <div class="spacing"></div>
+
+        </div>
+
+        <!-- ---- Background Moving Illustration ---------------------------------------- -->
+        <div class="rellax position-absolute guitar hideImages" data-rellax-speed="2" style="transform: translate3d(0px, -137px, 0px);">
+            <img src="img/guitar.png" alt="guitar">
+        </div>
+        <div class="rellax position-absolute piano hideImages" data-rellax-speed="1" style="transform: translate3d(0px, -137px, 0px);">
+            <img src="img/piano.png" alt="piano">
+        </div>
+        <div class="rellax position-absolute gClef hideImages" data-rellax-speed="1.5" style="transform: translate3d(0px, -137px, 0px);">
+            <img src="img/gClef.png" alt="gClef">
+        </div>
+        <div class="position-absolute metronome hideImages" style="transform: translate3d(0px, 0px, 0px);">
+            <img src="img/metronome.png" alt="metronome">
+        </div>
+
+        <!-- ---- Get Version List from API --------------------------------------------- -->
+        <script src="https://smpny7.github.io/VIVACE-Web/js/jsonList.js"></script>
+
+
+        <!-- ---- Rellax JavaScript ----------------------------------------------------- -->
+        <script src="https://smpny7.github.io/VIVACE-Web/rellax/js/rellax.min.js"></script>
+        <script>
+            var rellax = new Rellax('.rellax');
+        </script>
+
+    </div>
+
+</body>
+
+</html>

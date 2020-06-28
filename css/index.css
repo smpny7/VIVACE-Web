@@ -1,0 +1,254 @@
+body {
+    font-family: 'Keania One';
+    overflow-x: hidden;
+}
+
+h1 {
+    background: -webkit-linear-gradient(-90deg, #69f1fa 0, #21b6e1 100%);
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: .5rem;
+    top: 30vh;
+    width: 100vw;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 6px transparent
+}
+
+h2 {
+    color: #0c9df5;
+    letter-spacing: .15rem;
+    margin-top: 80px;
+    padding-left: 30px
+}
+
+h2::before {
+    background-color: #ffb340;
+    border-radius: 5px;
+    content: '';
+    height: 30px;
+    margin-left: -20px;
+    margin-top: 4px;
+    position: absolute;
+    width: 6px
+}
+
+h3 {
+    color: #ffb340;
+    letter-spacing: .2rem
+}
+
+span {
+    display: inline-block
+}
+
+a,
+a:hover,
+button,
+button:hover {
+    text-decoration: none!important
+}
+
+:focus {
+    box-shadow: none!important;
+    outline: 0!important
+}
+
+.background {
+    height: 100vh;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+    -webkit-tap-highlight-color: #00000000;
+    -webkit-touch-callout: none
+}
+
+.subTitle {
+    background: -webkit-linear-gradient(-80deg, #ffd500 0, #ffd900 100%);
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: .3rem;
+    top: 65vh;
+    width: 100vw;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 4px transparent
+}
+
+.bottom {
+    bottom: 7vh;
+    width: 100vw
+}
+
+.whtBg {
+    background-color: #ffffffc2;
+    height: fit-content;
+    position: absolute;
+    top: 93vh;
+    width: 100vw
+}
+
+.youtube {
+    position: relative;
+    padding-top: 56.25%
+}
+
+.youtube iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%!important;
+    height: 100%!important
+}
+
+.list-group li {
+    border: #ffb340 solid 3px;
+    font-size: 22px;
+    letter-spacing: .1rem;
+    margin: auto
+}
+
+.list-group li p {
+    color: #646363
+}
+
+.list-group li a {
+    color: #0c9df5
+}
+
+.inactive {
+    color: #c7c7c7!important
+}
+
+.card {
+    border: #ffb340 solid 3px
+}
+
+.card-body a {
+    border-bottom: solid 1.5px
+}
+
+.card-text {
+    color: #3b3b3b;
+    font-size: 20px;
+    letter-spacing: .1rem
+}
+
+.card-img-top {
+    margin: auto;
+    width: 80%
+}
+
+.btn-primary {
+    background-color: #0c9df5;
+    font-size: 20px;
+    letter-spacing: .1rem;
+    padding: 6px 15px
+}
+
+.card-header {
+    background-color: #fff
+}
+
+.card-body a {
+    border: none
+}
+
+.btn-link {
+    color: #646363;
+    font-size: 22px;
+    letter-spacing: .1rem;
+    padding: 0 15px
+}
+
+.bi {
+    margin-top: 6px;
+    vertical-align: top
+}
+
+.japaneseFont {
+    clear: both;
+    font-family: "M PLUS Rounded 1c"
+}
+
+.guitar {
+    right: 2vw;
+    top: 40vh;
+    z-index: -1
+}
+
+.piano {
+    left: 0;
+    top: 130vh;
+    z-index: -1
+}
+
+.gClef {
+    right: 1vw;
+    top: 220vh;
+    z-index: -1
+}
+
+.metronome {
+    bottom: 0;
+    left: 4vw;
+    z-index: -1
+}
+
+.spacing {
+    height: 5vh
+}
+
+.hideImages {
+    display: none
+}
+
+@media screen and (min-width:720px) {
+    h1 {
+        font-size: 110px
+    }
+    h2 {
+        font-size: 40px;
+        margin-top: 110px
+    }
+    h2::before {
+        height: 40px;
+        margin-left: -24px;
+        width: 8px
+    }
+    .subTitle {
+        font-size: 40px
+    }
+    .bottom {
+        bottom: 0
+    }
+    .whtBg {
+        top: 100vh
+    }
+    .padding {
+        height: 10vh
+    }
+}
+
+@media screen and (min-width:1140px) {
+    h1 {
+        font-size: 150px
+    }
+    h2 {
+        font-size: 50px;
+        margin-top: 160px
+    }
+    h2::before {
+        height: 50px;
+        margin-left: -28px;
+        margin-top: 6px
+    }
+    .subTitle {
+        font-size: 45px
+    }
+}
+
+@media screen and (min-width:1680px) {
+    .hideImages {
+        display: block
+    }
+}
