@@ -8,7 +8,7 @@ h1 {
     color: #fff;
     font-size: 80px;
     letter-spacing: .5rem;
-    top: 30vh;
+    top: 25vh;
     width: 100vw;
     -webkit-background-clip: text;
     -webkit-text-stroke: 6px transparent
@@ -64,26 +64,28 @@ button:hover {
 }
 
 .subTitle {
-    background: -webkit-linear-gradient(-80deg, #ffd500 0, #ffd900 100%);
     color: #fff;
     font-size: 30px;
     letter-spacing: .3rem;
-    top: 65vh;
-    width: 100vw;
+    top: 60vh;
+    width: 100vw
+}
+
+.subTitle span {
+    background: -webkit-linear-gradient(-80deg, #ffd500 0, #ffd900 100%);
     -webkit-background-clip: text;
     -webkit-text-stroke: 4px transparent
 }
 
 .bottom {
-    bottom: 7vh;
+    bottom: 0;
     width: 100vw
 }
 
 .whtBg {
     background-color: #ffffffc2;
     height: fit-content;
-    position: absolute;
-    top: 93vh;
+    top: 100%;
     width: 100vw
 }
 
@@ -217,12 +219,6 @@ button:hover {
     }
     .subTitle {
         font-size: 40px
-    }
-    .bottom {
-        bottom: 0
-    }
-    .whtBg {
-        top: 100vh
     }
     .padding {
         height: 10vh
