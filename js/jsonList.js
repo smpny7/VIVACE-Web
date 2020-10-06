@@ -15,6 +15,6 @@ $(function() {
             }
         }
     };
-    req.open("GET", "http://api.vivace-app.com/v3.0/license", false);
+    req.open("GET", "https://api.vivace-app.com/v3.0/license", false);
     req.send(null);
 });
